@@ -1,0 +1,47 @@
+
+body{
+    margin: 0;
+}
+
+.navBar{
+    background-color: orange;
+    padding: 10px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.navBar img{
+    width: 100px;
+}
+
+.dropdown-is-active{
+    display: flex;
+}
+
+.home{
+    display: flex;
+    margin-top: 0;
+    padding: 20px;
+    border: 2px ridge rgba(2, 2, 1, 0.6);
+}
+
+.about-us{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bmi{
+    padding: 20px;
+    border: 2px ridge rgba(2, 2, 1, 0.6);
+    
+}
+.bmi img{
+    width: 25%;
+}
+
+.our-goal{
+    display: flex;
+    border: 2px ridge rgba(2, 2, 1, 0.6);
+    margin-top: 0;
+    padding: 20px;
+}
