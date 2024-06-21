@@ -1,47 +1,159 @@
+:root {
+    
+  }
 
-body{
-    margin: 0;
-}
+    
+  .teko-font {
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
 
-.navBar{
-    background-color: orange;
-    padding: 10px;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-}
+  .anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 
-.navBar img{
-    width: 100px;
-}
+  
+  .arvo-bold {
+    font-family: "Arvo", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
 
-.dropdown-is-active{
-    display: flex;
-}
+  .arvo-regular {
+    font-family: "Arvo-Regular", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
 .home{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://www.kaged.com/cdn/shop/files/NYNY-Web-Banner-a.jpg?v=1703882666');
+    background-size: cover;
+    background-position: center; 
+    height: 100vh; 
     display: flex;
-    margin-top: 0;
-    padding: 20px;
-    border: 2px ridge rgba(2, 2, 1, 0.6);
+    justify-content: center; 
+    align-items: center; 
+    opacity: 0.;
 }
 
-.about-us{
-    font-family: Arial, Helvetica, sans-serif;
+
+.container {
+    text-align: center;
+    color: white;
+    padding: 20px;
 }
 
-.bmi{
-    padding: 20px;
-    border: 2px ridge rgba(2, 2, 1, 0.6);
-    
+
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    font-family: Teko;
+    font-size: 50px;
+    text-shadow: 0px 0px 10px rgb(127, 123, 123);
 }
+
+.logo .material-symbols-outlined {
+    font-family: 'Material Symbols Outlined', sans-serif;
+    font-size: 3rem;
+    margin-right: 5px;
+}
+
+.top-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.top-buttons button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: grey;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.top-buttons button:hover {
+    background-color: #ffffff33;
+}
+
+.home h1 {
+    font-family: Anton;
+    font-size: 70px;
+    margin-top: 50px; 
+}
+
+.home p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    font-family: Arvo;
+}
+
+
+.cardBmi{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
 .bmi img{
-    width: 25%;
+    
+    width: 40%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.bmi h2{
+    font-size: 30px;
+    font-family: Arvo;
+    margin-top: 20px;
+}
+.bmi p{
+    width: 40%;
+    font-size: 20px;
+    align;
+    font-family: Arvo-Regular;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.bmi button{
+    background-color: #a5a5a5;
+    color: white;
+    font-family: Teko;
+    padding: 10px 20px 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: 3px solid #808080;
+}
+
+.bmi button:hover{
+    background-color: #727272;  
+    border: 3px solid #3d3d3d;
 }
 
 .our-goal{
     display: flex;
-    border: 2px ridge rgba(2, 2, 1, 0.6);
+    justify-content: ce;
+    font-family: Teko;
     margin-top: 0;
     padding: 20px;
 }
