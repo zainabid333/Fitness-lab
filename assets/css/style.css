@@ -95,65 +95,73 @@
 
 .home h1 {
     font-family: Anton;
-    font-size: 70px;
+    font-size: 75px;
     margin-top: 50px; 
+    text-shadow: 0px 0px 10px black;
 }
 
 .home p {
     font-size: 1.5rem;
     line-height: 1.6;
     font-family: Arvo;
+    text-shadow: 0px 0px 10px black;
 }
 
 
-.cardBmi{
-    margin-top: 5px;
+.about-us{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    background-color: #989797;
+    justify-content: space-around;
+   padding: 50px;
+}
+
+.about-us h2{
+    font-family: Anton;
+    font-size: 5em;
    
+    margin-right: 300px;
+    padding: 50px;
+    margin-left: 100px;
+    border-right: 5px solid black
 }
 
-.bmi img{
-    
-    width: 40%;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.bmi h2{
-    font-size: 30px;
+.about-us p{
+  
     font-family: Arvo;
-    margin-top: 20px;
-}
-.bmi p{
-    width: 40%;
-    font-size: 20px;
-    align;
-    font-family: Arvo-Regular;
-    text-align: center;
-    margin-top: 20px;
+    font-style: oblique;
+    font-size: 1.3em;
+    padding: 50px;
+    margin-right: 100px;
+    
 }
 
-.bmi button{
-    background-color: #a5a5a5;
-    color: white;
-    font-family: Teko;
-    padding: 10px 20px 10px 20px;
-    margin-top: 20px;
-    border-radius: 5px;
-    font-size: 20px;
-    border: 3px solid #808080;
-}
-
-.bmi button:hover{
-    background-color: #727272;  
-    border: 3px solid #3d3d3d;
-}
 
 .our-goal{
     display: flex;
-    justify-content: ce;
-    font-family: Teko;
-    margin-top: 0;
-    padding: 20px;
+    flex-direction: row;
+    background-color: #363636;
+    justify-content: space-around;
+   padding: 50px;
+}
+
+.our-goal h2{
+    font-family: Anton;
+    font-size: 5em;
+    color: white;
+    margin-right: 300px;
+    padding: 50px;
+    margin-left: 100px;
+    border-left: 5px solid white
+}
+
+.our-goal p{
+    color: white;
+    font-family: Arvo;
+    font-style: oblique;
+    font-size: 1.3em;
+    padding: 50px;
+    margin-right: 100px;
+    text-align: right;
+    
 }
