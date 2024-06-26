@@ -1,6 +1,6 @@
-:root {
+/* :root {
     
-  }
+  } */
 
     
   .teko-font {
@@ -128,7 +128,7 @@
 .bmi p{
     width: 40%;
     font-size: 20px;
-    align;
+    /* align; */
     font-family: Arvo-Regular;
     text-align: center;
     margin-top: 20px;
@@ -156,4 +156,15 @@
     font-family: Teko;
     margin-top: 0;
     padding: 20px;
+}
+ */
+
+.light{
+  background-color: white;
+  color: black;
+}
+
+.dark{
+  background-color: rgb(66, 62, 62);
+  color: white;
 }
