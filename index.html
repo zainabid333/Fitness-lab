@@ -21,63 +21,109 @@
     <div id="theme">
     <main>
        <section class="home">
-        <div class="container">
-            
-            <div class="logo">
-                <span class="material-symbols-outlined">
-                    fitness_center
-                </span>
-                <span>FitnessLab</span>
+            <div class="container">
+                
+                <div class="logo">
+                    <span class="material-symbols-outlined">
+                        fitness_center
+                    </span>
+                    <span>FitnessLab</span>
+                </div>
+                <div class="top-buttons">
+                    <button id="theme-switcher">Theme Switcher</button>
+                    <button class="dropdown" id="dropdownDefaultButton" data-dropdown-toggle="dropdown">
+                        Menu
+                    
+                    </button>
+                    <button>Login/SignUp</button>
+                </div>
+                <h1>Welcome to Fitness Lab</h1>
+                <p>Transforming Lives, One Workout at a Time!</p>
             </div>
-            <div class="top-buttons">
-              <button id="theme-switcher">Theme Switcher</button>
-                <button class="dropdown" id="dropdownDefaultButton" data-dropdown-toggle="dropdown">
-                    Menu
-                   
-                </button>
-                <button>Login/SignUp</button>
+            <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 light:bg-gray-500">
+                
+                <ul class="py-2 text-sm text-stone-600 light:text-stone-500" aria-labelledby="dropdownDefaultButton">
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-stone-100 dark:hover:bg-stone-600 dark:hover:text-white">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-stone-100 dark:hover:bg-stone-600 dark:hover:text-white">BMI Chart</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-stone-100 dark:hover:bg-stone-600 dark:hover:text-white">BMI Calculator</a>
+                    </li>
+                </ul>
             </div>
-            <h1>Welcome to Fitness Lab</h1>
-            <p>Transforming Lives, One Workout at a Time!</p>
-        </div>
-        <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-500">
-            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
-                <li>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">About Us</a>
-                </li>
-                <li>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">BMI Chart</a>
-                </li>
-                <li>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">BMI Calculator</a>
-                </li>
-            </ul>
-        </div>
                 
        </section>
-       <section class="bmi">
-            <div class="cardBmi">
-                <img src="https://www.builtlean.com/wp-content/uploads/2013/06/Bmi-chart.jpg">
-                <h2>BMI Calculator</h2>
-                <p>Body Mass Index (BMI) is a metric used to estimate body fat percentage and classify adults into weight categories. It's calculated by dividing a person's weight in kilograms by their height in meters squared. BMI can be used to screen for weight categories that may lead to health problems, but it doesn't diagnose body fatness or health</p>
-                <button>Calculate your BMI</button>
+
+       <section class="about-us">
+            <h2>About Us</h2>
+            <p>Fitness Lab is specialized in helping you find exercises tailored to your unique body type.
+                 Whether you're looking to build muscle, improve flexibility, or enhance cardiovascular health, our platform offers personalized
+                  exercise recommendations based on your body type. Discover workouts that are effective and enjoyable, designed to fit your individual
+                   fitness goals and preferences. Empower yourself with the right
+                 exercises to achieve your best physical health and well-being. Join us on your journey to fitness success today!</p>
+       </section>
+
+       <section class="flex justify-around bg-stone-300 pb-10">
+           
+            <div class="  max-w-2xl bg-stone-300  mt-10  border border-gray-400 rounded-lg shadow light dark:border-gray-700">
+                <a href="#">
+                    <img class="rounded-t-lg" src="https://www.builtlean.com/wp-content/uploads/2013/06/Bmi-chart.jpg" alt="BMIchart" />
+                </a>
+                <div class="p-6">
+                    <a href="#">
+                        <h5 class="mb-3 text-4xl font-black tracking-tight text-gray-900 dark:text-black text-center font-mono">BMI CALCULATOR</h5>
+                    </a>
+                    <p class="mb-4 font-medium text-gray-700 dark:text-gray-800 text-center">
+                        A BMI (Body Mass Index) calculator is a tool used to estimate whether a person has a healthy body weight for their height. 
+                        It calculates BMI based on an individual's weight and height,
+                        and provides a numerical value which is then categorized into different BMI ranges.</p>
+                    <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-stone-700 rounded-lg hover:bg-stone-800 focus:ring-4 focus:outline-none focus:ring-stone-300 dark:bg-stone-600 dark:hover:bg-stone-700 dark:focus:ring-stone-800 justify-center ">
+                        Calculate your BMI
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
+                    </a>
+                </div>
             </div>    
-       </section>
+
+            <div class="  max-w-2xl bg-stone-300  mt-10 border border-gray-400 rounded-lg shadow light dark:border-gray-700">
+                <a href="#">
+                    <div class="rounded-t-lg">
+                        <iframe width="100%" height="400" src="https://www.youtube.com/embed/xyQY8a-ng6g" title="How the food you eat affects your brain - Mia Nacamulli" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="border-radius: 5px 5px 0 0 " referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div> 
+                </a>
+                <div class="p-6 bg-stone-300">
+                    <a href="#">
+                        <h5 class="mb-3 text-4xl font-black tracking-tight text-gray-900 dark:text-black text-center font-mono">NUTRICIONAL HELP</h5>
+                    </a>
+                    <p class="mb-4 font-medium text-gray-700 dark:text-gray-800 text-center">
+                        Having good nutrition is crucial for several reasons, all of which contribute to overall health, well-being, and quality of life.
+                        Some key reasons for having a good nutrition is preventing health diseases, it helps with your energy and productivity and with yout mental health.</p>
+                    <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-stone-700 rounded-lg hover:bg-stone-800 focus:ring-4 focus:outline-none focus:ring-stone-300 dark:bg-stone-600 dark:hover:bg-stone-700 dark:focus:ring-stone-800 justify-center ">
+                        Read More
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
+                    </a>
+                </div>
+            </div> 
+        </section>
+
        <section class="our-goal">
-            <div class="goal">
-                <h1>Our Goals</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla deserunt fuga quas quae deleniti pariatur. Eveniet recusandae iure nisi alias ab voluptatem quo aperiam at tempore nobis, ea a enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas est odio hic sequi ipsa, fugiat neque! Ducimus quod vitae commodi, dolorum dolor doloribus quo molestias, modi debitis neque, quia reiciendis?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim aperiam similique quis labore provident repellat facilis iste nostrum laudantium voluptatum incidunt, praesentium nesciunt cupiditate adipisci dignissimos quaerat omnis unde repudiandae.</p>
-            </div>
-            <div class="nutricional-video">
-                <iframe width="500" height="300" src="https://www.youtube.com/embed/xyQY8a-ng6g" title="How the food you eat affects your brain - Mia Nacamulli" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>  
-       </section>
+            <p>At FitnessLab, our goal is to empower individuals by providing personalized exercise recommendations tailored to their unique body types. 
+                We aim to facilitate a journey of fitness discovery and improvement, ensuring that every user can find exercises that not only align with
+                 their physical characteristics but also contribute to their overall health and well-being. 
+                 By offering curated fitness plans and expert guidance, we strive to make fitness accessible, enjoyable, and effective for everyone,
+                  regardless of their starting point or fitness goals. Join us in transforming your fitness experience and achieving sustainable, personalized success</p>
+            <h2>Our Goal</h2>
+        </section>
        
         
 
-            
-
-              
+    
 
 
 
