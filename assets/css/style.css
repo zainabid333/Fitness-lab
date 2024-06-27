@@ -46,12 +46,16 @@ body {
 .container {
   display: flex;
   justify-content: space-between;
-  width: 1200px;
+  width: 1150px;
   margin: 0 auto;
 }
 
 #exercise-container {
   margin-bottom: 20px;
+}
+
+.exercise-item {
+  font-size: 14px;
 }
 
 form {
@@ -75,6 +79,14 @@ h2 {
 
 h3 {
   font-size: 1rem;
+}
+
+.horizontal-line {
+  height: 1px; 
+  background-color: black;
+  margin-top: 10px;
+  margin: 0 auto;
+  width: 90%;
 }
 
 .left-column {
@@ -109,4 +121,92 @@ h3 {
 #result-content {
   margin-top: 10px;
   padding-left: 10px;
+}
+
+.vertical-line {
+  border-left: 2px solid black;
+  height: 100px;
+}
+
+/* Tablets - header changes color */
+@media screen and (max-width: 992px) {
+  .container {
+    width: 800px;
+  }
+
+  header {
+    background-color: lightblue;
+  }
+
+  .exercise-item {
+    font-size: 12px;
+  }
+    
+  h1 {
+    font-size: 2rem;
+    width: 600px;
+  }
+
+  .logo {
+    position: absolute;
+    display: flex;
+    top: 50px;
+    left: 20px;
+    font-size: 25px;
+  }
+}
+
+/* Large smartphones - header changes color */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 600px;
+  }
+
+  header {
+    background-color: lightgreen;
+  }
+
+  .exercise-item {
+    font-size: 10px;
+  }
+    
+  h1 {
+    font-size: 1.5rem;
+    width: 400px;
+  }
+
+  .logo {
+    position: absolute;
+    display: flex;
+    top: 50px;
+    left: 20px;
+    font-size: 15px;
+  }
+}
+
+/* Small smartphones - header change color */
+@media screen and (max-width: 576px) {
+  .container {
+    width: 400px;
+  }
+  header {
+    background-color: yellow;
+  }
+
+  .exercise-item {
+    font-size: 10px;
+  }  
+
+  h1 {
+    font-size: 1rem;
+    width: 300px;
+  }
+
+  .logo {
+    position: absolute;
+    display: flex;
+    top: 50px;
+    left: 20px;
+    font-size: 10px;
+  }
 }

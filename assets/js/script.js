@@ -45,8 +45,10 @@ function displayResults(resultObj) {
     exerciseDiv.append($("<p>").text(`Equipment: ${exercise.equipment}`));
     exerciseDiv.append($("<p>").text(`Difficulty: ${exercise.difficulty}`));
     exerciseDiv.append($("<p>").text(`Instructions: ${exercise.instructions}`));
+    exerciseDiv.append($("<div>").addClass("horizontal-line"));
 
     resultContentEl.append(exerciseDiv);
+    
   });
 }
 
