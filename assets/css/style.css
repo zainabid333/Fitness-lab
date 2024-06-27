@@ -114,12 +114,12 @@
     background-color: #989797;
     justify-content: space-around;
    padding: 50px;
+   height: 100vh;
 }
 
 .about-us h2{
     font-family: Anton;
     font-size: 5em;
-   
     margin-right: 300px;
     padding: 50px;
     margin-left: 100px;
