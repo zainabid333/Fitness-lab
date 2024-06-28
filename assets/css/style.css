@@ -1,212 +1,212 @@
-html,
-body {
-  min-height: 100%;
-  background-color: lightgray;
+:root {
+    
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  
+.teko-font {
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.anton-regular {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+.arvo-bold {
+  font-family: "Arvo", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.arvo-regular {
+  font-family: "Arvo-Regular", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.home{
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  font-size: 16px;
-  color: black;
+  font-family: Arial, sans-serif;
+  background-image: url('https://www.kaged.com/cdn/shop/files/NYNY-Web-Banner-a.jpg?v=1703882666');
+  background-size: cover;
+  background-position: center; 
+  height: 100vh; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  opacity: 0.;
 }
 
-.btn {
-  text-align: center;
-  display: inline-block;
-  padding: 0.5rem 1.2rem;
-  margin: 0;
-  text-decoration: none;
-  font-size: 1rem;
-  border-radius: 0.3rem;
-  border: 1px solid transparent;
-  outline: none;
-  color: #1a1a1a;
-  background-color: #aeaeae;
-  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-}
-
-.btn.btn-block {
-  width: 16%;
-  display: block;
-  text-align: center;
-  margin-top: 5px;
-}
-
-.btn.btn-info {
-  background-color: blue;
-  color: #ffffff;
-}
 
 .container {
-  display: flex;
-  justify-content: space-between;
-  width: 1150px;
-  margin: 0 auto;
-}
-
-#exercise-container {
-  margin-bottom: 20px;
-}
-
-.exercise-item {
-  font-size: 14px;
-}
-
-form {
-  width: 100%;
-}
-
-header {
-  background-color: gray;
-  height: 150px;
-}
-
-h1 {
-  font-size: 2.25rem;
   text-align: center;
-  margin-top: 50px;
-}
-
-h2 {
-  font-size: 1rem;
-}
-
-h3 {
-  font-size: 1rem;
-}
-
-.horizontal-line {
-  height: 1px; 
-  background-color: black;
-  margin-top: 10px;
-  margin: 0 auto;
-  width: 90%;
-}
-
-.left-column {
-  width: 30%;
-  padding-left: 20px;
-  background-color: lightgreen;
+  color: white;
+  padding: 20px;
 }
 
 .logo {
   position: absolute;
-  display: flex;
-  top: 50px;
+  top: 20px;
   left: 20px;
-  font-size: 30px;
+  display: flex;
+  align-items: center;
+  font-family: Teko;
+  font-size: 50px;
+  text-shadow: 0px 0px 10px rgb(127, 123, 123);
 }
 
-/*.logo img {
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
-  padding-top: 10px;
-  padding-right: 10px;
-  margin-left: 30px;
-}*/
-
-.right-column {
-  width: 70%;
-  padding-left: 20px;
-  background-color: lightblue;
+.logo .material-symbols-outlined {
+  font-family: 'Material Symbols Outlined', sans-serif;
+  font-size: 3rem;
+  margin-right: 5px;
 }
 
-#result-content {
-  margin-top: 10px;
-  padding-left: 10px;
+.top-buttons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
 }
 
-.vertical-line {
-  border-left: 2px solid black;
-  height: 100px;
+.top-buttons button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: grey;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
 }
 
-/* Tablets - header changes color */
-@media screen and (max-width: 992px) {
-  .container {
-    width: 800px;
-  }
-
-  header {
-    background-color: lightblue;
-  }
-
-  .exercise-item {
-    font-size: 12px;
-  }
-    
-  h1 {
-    font-size: 2rem;
-    width: 600px;
-  }
-
-  .logo {
-    position: absolute;
-    display: flex;
-    top: 50px;
-    left: 20px;
-    font-size: 25px;
-  }
+.top-buttons button:hover {
+  background-color: #ffffff33;
 }
 
-/* Large smartphones - header changes color */
-@media screen and (max-width: 768px) {
-  .container {
-    width: 600px;
-  }
-
-  header {
-    background-color: lightgreen;
-  }
-
-  .exercise-item {
-    font-size: 10px;
-  }
-    
-  h1 {
-    font-size: 1.5rem;
-    width: 400px;
-  }
-
-  .logo {
-    position: absolute;
-    display: flex;
-    top: 50px;
-    left: 20px;
-    font-size: 15px;
-  }
+.home h1 {
+  font-family: Anton;
+  font-size: 75px;
+  margin-top: 50px; 
+  text-shadow: 0px 0px 10px black;
 }
 
-/* Small smartphones - header change color */
-@media screen and (max-width: 576px) {
-  .container {
-    width: 400px;
-  }
-  header {
-    background-color: yellow;
-  }
+.home p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-family: Arvo;
+  text-shadow: 0px 0px 10px black;
+}
 
-  .exercise-item {
-    font-size: 10px;
-  }  
 
-  h1 {
-    font-size: 1rem;
-    width: 300px;
-  }
+#about-us{
+  display: flex;
+  flex-direction: row;
+  background-color: #989797;
+  justify-content: space-around;
+ padding: 50px;
+}
 
-  .logo {
-    position: absolute;
-    display: flex;
-    top: 50px;
-    left: 20px;
-    font-size: 10px;
-  }
+#about-us h2{
+  font-family: Anton;
+  font-size: 5em;
+ 
+  margin-right: 300px;
+  padding: 50px;
+  margin-left: 100px;
+  border-right: 5px solid black
+}
+
+#about-us p{
+
+  font-family: Arvo;
+  font-style: oblique;
+  font-size: 1.3em;
+  padding: 50px;
+  margin-right: 100px;
+  
+}
+
+
+.our-goal{
+  display: flex;
+  flex-direction: row;
+  background-color: #363636;
+  justify-content: space-around;
+ padding: 50px;
+}
+
+.our-goal h2{
+  font-family: Anton;
+  font-size: 5em;
+  color: white;
+  margin-right: 300px;
+  padding: 50px;
+  margin-left: 100px;
+  border-left: 5px solid white
+}
+
+.our-goal p{
+  color: white;
+  font-family: Arvo;
+  font-style: oblique;
+  font-size: 1.3em;
+  padding: 50px;
+  margin-right: 100px;
+  text-align: right;
+  
+}
+
+.exercise-videos{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #363636;
+  padding: 100px;
+
+}
+
+.video{
+  padding: 40px;
+  width: fit-content;
+  background-color: #898989;
+}
+
+
+
+footer{
+  background-color: #bcbcbc;
+  padding: 50px;
+  display: flex;
+  border-top: 20px solid #898989;
+}    
+
+.logo2 {
+  color: white;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  font-family: Teko;
+  font-size: 50px;
+  text-shadow: 0px 0px 10px rgb(127, 123, 123);
+  
+}
+
+footer a{
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+  color: white;
+  font-family: Arvo;
+  text-shadow: 0px 0px 10px rgb(127, 123, 123);
+  display: flex;
+  justify-content: center;
 }
