@@ -21,7 +21,6 @@
     <main>
        <section class="home">
             <div class="container">
-                
                 <div class="logo">
                     <span class="material-symbols-outlined">
                         fitness_center
@@ -41,20 +40,20 @@
             <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 light:bg-gray-500">
                 <ul class="py-2 text-sm text-stone-600 light:text-stone-500" aria-labelledby="dropdownDefaultButton">
                     <li>
-                        <a href="#" class="block px-4 py-2 hover:bg-stone-100 dark:hover:bg-stone-600 dark:hover:text-white">About Us</a>
+                        <a href="#about-us" class="block px-4 py-2 hover:bg-stone-100 dark:hover:bg-stone-600 dark:hover:text-white">About Us</a>
                     </li>
                     <li>
-                        <a href="#" class="block px-4 py-2 hover:bg-stone-100 dark:hover:bg-stone-600 dark:hover:text-white">BMI Chart</a>
+                        <a href="#BMIChart" class="block px-4 py-2 hover:bg-stone-100 dark:hover:bg-stone-600 dark:hover:text-white">BMI Chart</a>
                     </li>
                     <li>
-                        <a href="#" class="block px-4 py-2 hover:bg-stone-100 dark:hover:bg-stone-600 dark:hover:text-white">BMI Calculator</a>
+                        <a href="#our-goal" class="block px-4 py-2 hover:bg-stone-100 dark:hover:bg-stone-600 dark:hover:text-white">Our Goal</a>
                     </li>
                 </ul>
             </div>
                 
        </section>
 
-       <section class="about-us">
+       <section id="about-us">
             <h2>About Us</h2>
             <p>Fitness Lab is specialized in helping you find exercises tailored to your unique body type.
                  Whether you're looking to build muscle, improve flexibility, or enhance cardiovascular health, our platform offers personalized
@@ -65,7 +64,7 @@
 
        <section class="flex justify-around bg-stone-300 pb-10">
            
-            <div class="  max-w-2xl bg-stone-300  mt-10  border border-gray-400 rounded-lg shadow light dark:border-gray-700">
+            <div id="BMIChart" class="  max-w-2xl bg-stone-300  mt-10  border border-gray-400 rounded-lg shadow light dark:border-gray-700">
                 <a href="#">
                     <img class="rounded-t-lg" src="https://www.builtlean.com/wp-content/uploads/2013/06/Bmi-chart.jpg" alt="BMIchart" />
                 </a>
@@ -109,7 +108,7 @@
             </div> 
         </section>
 
-       <section class="our-goal">
+       <section id="our-goal" class="our-goal">
             <p>At FitnessLab, our goal is to empower individuals by providing personalized exercise recommendations tailored to their unique body types. 
                 We aim to facilitate a journey of fitness discovery and improvement, ensuring that every user can find exercises that not only align with
                  their physical characteristics but also contribute to their overall health and well-being. 
@@ -117,17 +116,13 @@
                   regardless of their starting point or fitness goals. Join us in transforming your fitness experience and achieving sustainable, personalized success</p>
             <h2>Our Goal</h2>
         </section>
-        <section class="exercise-videos">
-            <div class="video1">
-                <iframe width="400" height="225"  src="https://www.youtube.com/embed/uhGxko5VbG4" title="How To: 45 Degree Lean Away Wide Grip Lat Pulldown" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <div class="video2">     
-                <iframe width="400" height="225" src="https://www.youtube.com/embed/sOXgoKKOIO4" title="How To: Seated Alternating Dumbbell Front Raise" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <section  class="exercise-videos">
+            <div class = 'video'>
+                <div id="player"></div>
             </div>    
-            <div class="video3"> 
-                <iframe width="400" height="225"  src="https://www.youtube.com/embed/tBQYw_hgTRI" title="How To: Double Kettlebell Front Rack Step Up" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>   
-        </section>    
+        </section> 
+           
+          
  
     </main>
     
@@ -148,9 +143,10 @@
 
 
 
-
+    <script src="https://www.youtube.com/iframe_api"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-	<script src="script.js"></script>
+
+	<script src="./assets/js/script.js"></script>
 
   </body>
 </html>

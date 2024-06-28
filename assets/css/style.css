@@ -108,7 +108,7 @@
 }
 
 
-.about-us{
+#about-us{
     display: flex;
     flex-direction: row;
     background-color: #989797;
@@ -116,7 +116,7 @@
    padding: 50px;
 }
 
-.about-us h2{
+#about-us h2{
     font-family: Anton;
     font-size: 5em;
    
@@ -126,7 +126,7 @@
     border-right: 5px solid black
 }
 
-.about-us p{
+#about-us p{
   
     font-family: Arvo;
     font-style: oblique;
@@ -168,28 +168,20 @@
 
 .exercise-videos{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    width: 100%;
     background-color: #363636;
     padding: 100px;
+
 }
 
-.video1{
-    padding: 60px;
+.video{
+    padding: 40px;
     width: fit-content;
     background-color: #898989;
 }
 
-.video2{
-    padding: 60px;
-    width: fit-content;
-    background-color: #898989;
-}
 
-.video3{
-    padding: 60px;
-    width: fit-content;
-    background-color: #898989;
-}
 
 footer{
     background-color: #bcbcbc;
