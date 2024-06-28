@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function () {
   var elems = document.querySelectorAll('.dropdown-trigger');
   var instances = M.Dropdown.init(elems, options);
@@ -42,3 +43,4 @@ fetch('https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxR
   .catch(err => {
     console.error('Error fetching YouTube playlist:', err);
   });
+
