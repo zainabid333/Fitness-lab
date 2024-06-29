@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gym Registration Form</title>
+<link rel="stylesheet" href="/registration/registration.css">
+<!-- Include DatePicker CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+<div class="container">
+  <h2>Gym Registration</h2>
+  <form id="registrationForm" onsubmit="return validateForm()">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br><br>
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="1" required>
+    <br><br>
+    <label for="height">Height (feet and inches):</label>
+    <input type="text" id="height" name="height" placeholder="E.g., 5' 9" required>
+    <br><br>
+    <label for="weight">Weight (lb):</label>
+    <input type="number" id="weight" name="weight" step="0.1" min="0.1" required>
+    <br><br>
+    <label for="birthday">Birthday:</label>
+    <input type="text" id="birthday" name="birthday" placeholder="Select date" required>
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+  <p id="errorText" class="error"></p>
+</div>
+<!-- Include DatePicker JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="registration.js"></script>
+<script>
+  flatpickr("#birthday", {
+    dateFormat: "Y-m-d",
+    maxDate: new Date(), // Restrict future dates
+  });
+</script>
+</body>
+</html>
