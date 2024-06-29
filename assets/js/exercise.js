@@ -1,12 +1,10 @@
 const searchFormEl = $("#search-form");
 const resultTextEl = $("#result-text");
 const resultContentEl = $("#result-content");
-//API Key e6KIhBj0XyxJ+z6IyJL41g==X2pCWIBbVTDEJEEX
+const logoutBtn = $("#logout-btn");
 const appId = "e6KIhBj0XyxJ+z6IyJL41g==X2pCWIBbVTDEJEEX";
 
-// GET request to the exercise API
 function searchApi(muscle) {
-    // The URL for the API request to get the exercise
     let excQueryUrl = `https://api.api-ninjas.com/v1/exercises?muscle=${muscle}`;
 
     fetch(excQueryUrl, {
@@ -26,29 +24,27 @@ function searchApi(muscle) {
         })
         .catch((error) => {
             console.error("Error:", error);
-            resultContentEl.text("An error occurred while fetching data.");
+            resultContentEl.html("<p class='text-red-600'>An error occurred while fetching data.</p>");
         });
 }
 
 function displayResults(resultObj) {
     resultContentEl.empty();
     if (resultObj.length === 0) {
-        resultContentEl.text("No results found.");
+        resultContentEl.html("<p class='text-gray-600'>No results found.</p>");
         return;
     }
 
     resultObj.forEach(exercise => {
-        const exerciseDiv = $("<div>").addClass("exercise-item");
-        exerciseDiv.append($("<h3>").text(exercise.name));
-        exerciseDiv.append($("<p>").text(`Type: ${exercise.type}`));
-        exerciseDiv.append($("<p>").text(`Muscle: ${exercise.muscle}`));
-        exerciseDiv.append($("<p>").text(`Equipment: ${exercise.equipment}`));
-        exerciseDiv.append($("<p>").text(`Difficulty: ${exercise.difficulty}`));
-        exerciseDiv.append($("<p>").text(`Instructions: ${exercise.instructions}`));
-        exerciseDiv.append($("<div>").addClass("horizontal-line"));
+        const exerciseDiv = $("<div>").addClass("mb-8 pb-8 border-b border-gray-200 last:border-b-0");
+        exerciseDiv.append($("<h3>").addClass("text-xl font-semibold mb-2 text-blue-600").text(exercise.name));
+        exerciseDiv.append($("<p>").addClass("mb-1").html(`<span class="font-semibold">Type:</span> ${exercise.type}`));
+        exerciseDiv.append($("<p>").addClass("mb-1").html(`<span class="font-semibold">Muscle:</span> ${exercise.muscle}`));
+        exerciseDiv.append($("<p>").addClass("mb-1").html(`<span class="font-semibold">Equipment:</span> ${exercise.equipment}`));
+        exerciseDiv.append($("<p>").addClass("mb-1").html(`<span class="font-semibold">Difficulty:</span> ${exercise.difficulty}`));
+        exerciseDiv.append($("<p>").addClass("mb-1").html(`<span class="font-semibold">Instructions:</span> ${exercise.instructions}`));
 
         resultContentEl.append(exerciseDiv);
-
     });
 }
 
@@ -66,6 +62,15 @@ function handleSearchSubmit(event) {
     searchApi(searchInputVal);
 }
 
+function handleLogout() {
+    // Perform any necessary logout actions (e.g., clearing local storage)
+    // localStorage.clear();
+
+    // Redirect to index.html
+    window.location.href = "index.html";
+}
+
 $(document).ready(function () {
     searchFormEl.on("submit", handleSearchSubmit);
+    logoutBtn.on("click", handleLogout);
 });
