@@ -111,8 +111,18 @@ document.addEventListener('DOMContentLoaded', function () {
         const username = document.getElementById('login-username').value;
         const password = document.getElementById('login-password').value;
         const user = JSON.parse(localStorage.getItem(username));
-
+    
         if (user && user.password === password) {
+            // Create a loggedUser object
+            const loggedUser = {
+                username: username,
+                name: user.name,
+                // Add any other relevant user data here, but don't include sensitive info like password
+            };
+    
+            // Store loggedUser in localStorage
+            localStorage.setItem("loggedUser", JSON.stringify(loggedUser));
+    
             alert(`Welcome, ${user.name}!`);
             removeModalBackdrop();
             window.location.href = 'exercise.html';
