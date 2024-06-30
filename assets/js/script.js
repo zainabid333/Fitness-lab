@@ -1,12 +1,12 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.dropdown-trigger');
-    var instances = M.Dropdown.init(elems, options);
-  });
-  
 
-  const videoSection = document.querySelector('.exercise-videos');
+document.addEventListener('DOMContentLoaded', function () {
+  var elems = document.querySelectorAll('.dropdown-trigger');
+  // var instances = M.Dropdown.init(elems, options);
+});
 
-  fetch('https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=UUHcFIpm8rD9IrlDrw4Ted-Q&key=AIzaSyCyp3Ow3XgHeRTDbfPUreXa7I5lQ1Tv6fY')
+const videoSection = document.querySelector('.exercise-videos');
+
+fetch('https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=UUHcFIpm8rD9IrlDrw4Ted-Q&key=AIzaSyCyp3Ow3XgHeRTDbfPUreXa7I5lQ1Tv6fY')
   .then(res => res.json())
   .then(data => {
     if (data.items.length > 0) {
@@ -43,3 +43,4 @@ document.addEventListener('DOMContentLoaded', function() {
   .catch(err => {
     console.error('Error fetching YouTube playlist:', err);
   });
+
