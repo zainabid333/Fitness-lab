@@ -190,7 +190,7 @@
                 success today!</p>
         </section>
 
-        <section class="flex justify-around bg-stone-300 pb-10">
+        <section class="flex justify-around bg-stone-300 pb-10" id="bmi-section">
 
             <div id="BMIChart"
                 class="  max-w-2xl bg-stone-300  mt-10  border border-gray-400 rounded-lg shadow light dark:border-gray-700">
@@ -292,6 +292,10 @@
                                         <p id="bmi-value" class="text-2xl font-bold text-blue-600"></p>
                                         <p id="bmi-category" class="text-md text-gray-600 dark:text-gray-300"></p>
                                     </div>
+                                    <div id="bmi-chart-container" class="mt-4 hidden">
+                                        <h4 class="text-lg font-semibold text-gray-900 dark:text-white">BMI Chart</h4>
+                                        <div id="bmi-chart"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -300,7 +304,7 @@
             </div>
 
             <div
-                class="  max-w-2xl bg-stone-300  mt-10 border border-gray-400 rounded-lg shadow light dark:border-gray-700">
+                class="  max-w-2xl bg-stone-300  mt-10 border border-gray-400 rounded-lg shadow light dark:border-gray-700 ">
                 <a href="#">
                     <div class="rounded-t-lg">
                         <iframe width="100%" height="400" src="https://www.youtube.com/embed/xyQY8a-ng6g"
