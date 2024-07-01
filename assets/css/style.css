@@ -1,8 +1,4 @@
-:root {
-    
-}
 
-  
 .teko-font {
   font-family: "Teko", sans-serif;
   font-optical-sizing: auto;
@@ -91,7 +87,6 @@
   background-color: #ffffff33;
 }
 
-/* Add to your existing CSS file */
 
 .modal {
   display: none; 
@@ -157,37 +152,47 @@
 #about-us{
   display: flex;
   flex-direction: row;
-  background-color: #989797;
-  justify-content: space-around;
- padding: 50px;
+  background-color: #f17731;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  height: 100vh;
 }
 
 #about-us h2{
   font-family: Anton;
-  font-size: 5em;
- 
+  font-size: 8rem;
   margin-right: 300px;
   padding: 50px;
   margin-left: 100px;
-  border-right: 5px solid black
+  border-right: 5px solid white;
+  text-shadow: 0px 0px 10px rgb(106, 104, 104);
+  
+}
+#bmi-section{
+  height: 100vh;
+  background-color: #f17731;
 }
 
 #about-us p{
 
   font-family: Arvo;
   font-style: oblique;
-  font-size: 1.3em;
+  font-size: 2rem;
   padding: 50px;
   margin-right: 100px;
+  text-shadow: 0px 0px 10px rgb(106, 104, 104);
 }
 
 
 .our-goal{
   display: flex;
   flex-direction: row;
-  background-color: #363636;
+  background-color: #f17731;
   justify-content: space-around;
- padding: 50px;
+  padding: 50px;
+
 }
 
 .our-goal h2{
@@ -197,17 +202,19 @@
   margin-right: 300px;
   padding: 50px;
   margin-left: 100px;
-  border-left: 5px solid white
+  border-left: 5px solid white;
+  text-shadow: 0px 0px 10px rgb(106, 104, 104);
 }
 
 .our-goal p{
   color: white;
   font-family: Arvo;
   font-style: oblique;
-  font-size: 1.3em;
+  font-size: 3rem;
   padding: 50px;
   margin-right: 100px;
   text-align: right;
+  text-shadow: 0px 0px 10px rgb(106, 104, 104);
   
 }
 
@@ -215,7 +222,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: #363636;
+  background-color: #f17731;
   padding: 100px;
 
 }
@@ -223,10 +230,10 @@
 .video{
   padding: 40px;
   width: fit-content;
-  background-color: #898989;
+  background-color: white;
+  box-shadow: 0px 0px 20px rgb(94, 94, 94);
+  border-radius: 5px;
 }
-
-
 
 footer{
   background-color: #bcbcbc;

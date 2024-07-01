@@ -18,12 +18,12 @@ document.addEventListener('DOMContentLoaded', function () {
         // Remove all current selected tabs
         grandparent.querySelectorAll('[aria-selected="true"]').forEach(t => {
             t.setAttribute('aria-selected', false);
-            t.classList.remove('text-blue-600', 'border-blue-600');
+            t.classList.remove('text-orange-600', 'border-orange-600');
         });
 
         // Set this tab as selected
         target.setAttribute('aria-selected', true);
-        target.classList.add('text-blue-600', 'border-blue-600');
+        target.classList.add('text-orange-600', 'border-orange-600');
 
         // Hide all tab panels
         tabPanels.forEach(p => p.classList.add('hidden'));
@@ -207,11 +207,11 @@ document.addEventListener('DOMContentLoaded', function () {
         // Remove all current selected tabs
         grandparent.querySelectorAll('[aria-selected="true"]').forEach(t => {
             t.setAttribute('aria-selected', false);
-            t.classList.remove('text-blue-600', 'border-blue-600');
+            t.classList.remove('text-orange-600', 'border-orange-600');
         });
         // Set this tab as selected
         target.setAttribute('aria-selected', true);
-        target.classList.add('text-blue-600', 'border-blue-600');
+        target.classList.add('text-orange-600', 'border-orange-600');
         // Hide all tab panels
         tabPanels.forEach(p => p.classList.add('hidden'));
         // Show the selected panel

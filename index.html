@@ -190,28 +190,28 @@
                 success today!</p>
         </section>
 
-        <section class="flex justify-around bg-stone-300 pb-10">
+        <section class="flex justify-around bg-stone-300 pb-10" id="bmi-section">
 
             <div id="BMIChart"
-                class="  max-w-2xl bg-stone-300  mt-10  border border-gray-400 rounded-lg shadow light dark:border-gray-700">
+                class="  max-w-2xl bg-#f17731 mt-10   border-gray-400 rounded-lg  light dark:border-gray-700">
                 <a href="#">
                     <img class="rounded-t-lg" src="./assets/images/Bmi-chart.jpg" alt="BMIchart" />
                 </a>
                 <div class="p-6">
                     <a href="#">
                         <h5
-                            class="mb-3 text-4xl font-black tracking-tight text-gray-900 dark:text-black text-center font-mono">
+                            class="mb-3 text-4xl font-black tracking-tight text-gray-900 dark:text-white text-center font-mono">
                             BMI CALCULATOR
                         </h5>
                     </a>
-                    <p class="mb-4 font-medium text-gray-700 dark:text-gray-800 text-center">
+                    <p class="mb-4 font-medium text-gray-700 dark:text-white text-center">
                         A BMI (Body Mass Index) calculator is a tool used to estimate whether a person has a healthy
                         body weight for their height. It calculates BMI based on an individual's weight and height,
                         and provides a numerical value which is then categorized into different BMI ranges.
                     </p>
                     <div class="flex items-center justify-between">
                         <button data-modal-target="bmi-modal" data-modal-toggle="bmi-modal"
-                            class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                            class="block text-white bg-stone-700 hover:bg-stone-800 focus:ring-4 focus:outline-none focus:ring-stone-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-stone-600 dark:hover:bg-stone-700 dark:focus:ring-blue-800"
                             type="button">
                             Calculate BMI
                         </button>
@@ -292,6 +292,10 @@
                                         <p id="bmi-value" class="text-2xl font-bold text-blue-600"></p>
                                         <p id="bmi-category" class="text-md text-gray-600 dark:text-gray-300"></p>
                                     </div>
+                                    <div id="bmi-chart-container" class="mt-4 hidden">
+                                        <h4 class="text-lg font-semibold text-gray-900 dark:text-white">BMI Chart</h4>
+                                        <div id="bmi-chart"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -299,8 +303,7 @@
                 </div>
             </div>
 
-            <div
-                class="  max-w-2xl bg-stone-300  mt-10 border border-gray-400 rounded-lg shadow light dark:border-gray-700">
+            <div class="  max-w-2xl bg-#f17731  mt-10  border-gray-400 rounded-lg light dark:border-gray-700 ">
                 <a href="#">
                     <div class="rounded-t-lg">
                         <iframe width="100%" height="400" src="https://www.youtube.com/embed/xyQY8a-ng6g"
@@ -310,13 +313,13 @@
                             allowfullscreen></iframe>
                     </div>
                 </a>
-                <div class="p-6 bg-stone-300">
+                <div class="p-6 ">
                     <a href="#">
                         <h5
-                            class="mb-3 text-4xl font-black tracking-tight text-gray-900 dark:text-black text-center font-mono">
+                            class="mb-3 text-4xl font-black tracking-tight text-gray-900 dark:text-white text-center font-mono">
                             NUTRICIONAL HELP</h5>
                     </a>
-                    <p class="mb-4 font-medium text-gray-700 dark:text-gray-800 text-center">
+                    <p class="mb-4 font-medium text-gray-700 dark:text-white text-center">
                         Having good nutrition is crucial for several reasons, all of which contribute to overall health,
                         well-being, and quality of life.
                         Some key reasons for having a good nutrition is preventing health diseases, it helps with your
@@ -335,7 +338,6 @@
         </section>
 
         <section id="our-goal" class="our-goal">
-
             <p>At FitnessLab, our goal is to empower individuals by providing personalized exercise recommendations
                 tailored to their unique body types.
                 We aim to facilitate a journey of fitness discovery and improvement, ensuring that every user can find
@@ -344,7 +346,7 @@
                 By offering curated fitness plans and expert guidance, we strive to make fitness accessible, enjoyable,
                 and effective for everyone,
                 regardless of their starting point or fitness goals. Join us in transforming your fitness experience and
-                achieving sustainable, personalized success</p>
+                achieving sustainable, personalized success.</p>
             <h2>Our Goal</h2>
         </section>
         <section class="exercise-videos">
@@ -353,10 +355,7 @@
             </div>
         </section>
 
-
     </main>
-
-
 
     <footer>
         <div class="logo2">
@@ -370,8 +369,6 @@
         <a href="#">Licensing</a>
         <a href="#">About</a>
     </footer>
-
-
 
     <script src="https://www.youtube.com/iframe_api"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
