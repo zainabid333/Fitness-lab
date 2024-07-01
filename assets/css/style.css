@@ -157,26 +157,31 @@
 #about-us{
   display: flex;
   flex-direction: row;
-  background-color: #989797;
-  justify-content: space-around;
- padding: 50px;
+  background-color: #e66013;
+  color: #bcbcbc;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  height: 100vh;
 }
 
 #about-us h2{
   font-family: Anton;
-  font-size: 5em;
- 
+  font-size: 8rem;
   margin-right: 300px;
   padding: 50px;
   margin-left: 100px;
   border-right: 5px solid black
+}
+#bmi-section{
+  height: 100vh;
 }
 
 #about-us p{
 
   font-family: Arvo;
   font-style: oblique;
-  font-size: 1.3em;
+  font-size: 2rem;
   padding: 50px;
   margin-right: 100px;
 }
@@ -188,6 +193,7 @@
   background-color: #363636;
   justify-content: space-around;
  padding: 50px;
+ 
 }
 
 .our-goal h2{
@@ -210,6 +216,7 @@
   text-align: right;
   
 }
+
 
 .exercise-videos{
   display: flex;

@@ -6,6 +6,10 @@ function removeModalBackdrop() {
     document.body.classList.remove('overflow-hidden');
 }
 
+function createBmiChart(){
+    const heights = ['6\'5"', '6\'4"', '6\'3"', '6\'2"', '6\'1"', '6\'0"', '5\'11"', '5\'10"', '5\'9"', '5\'8"', '5\'7"', '5\'6"', '5\'5"', '5\'4"', '5\'3"', '5\'2"', '5\'1"', '5\'0"', '4\'11"', '4\'10"'];
+    
+}
 
 
 document.addEventListener('DOMContentLoaded', function () {
