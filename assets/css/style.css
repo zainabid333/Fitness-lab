@@ -1,177 +1,259 @@
 /* :root {
     
-  } */
-
-    
-  .teko-font {
-    font-family: "Teko", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-  }
-
-  .anton-regular {
-    font-family: "Anton", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
+}
 
   
-  .arvo-bold {
-    font-family: "Arvo", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
+.teko-font {
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
 
-  .arvo-regular {
-    font-family: "Arvo-Regular", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+.anton-regular {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+.arvo-bold {
+  font-family: "Arvo", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.arvo-regular {
+  font-family: "Arvo-Regular", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 .home{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-image: url('https://www.kaged.com/cdn/shop/files/NYNY-Web-Banner-a.jpg?v=1703882666');
-    background-size: cover;
-    background-position: center; 
-    height: 100vh; 
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    opacity: 0.;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('https://www.kaged.com/cdn/shop/files/NYNY-Web-Banner-a.jpg?v=1703882666');
+  background-size: cover;
+  background-position: center; 
+  height: 100vh; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  opacity: 0.;
 }
 
 
 .container {
-    text-align: center;
-    color: white;
-    padding: 20px;
+  text-align: center;
+  color: white;
+  padding: 20px;
 }
 
-
-
 .logo {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    display: flex;
-    align-items: center;
-    font-family: Teko;
-    font-size: 50px;
-    text-shadow: 0px 0px 10px rgb(127, 123, 123);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  font-family: Teko;
+  font-size: 50px;
+  text-shadow: 0px 0px 10px rgb(127, 123, 123);
 }
 
 .logo .material-symbols-outlined {
-    font-family: 'Material Symbols Outlined', sans-serif;
-    font-size: 3rem;
-    margin-right: 5px;
+  font-family: 'Material Symbols Outlined', sans-serif;
+  font-size: 3rem;
+  margin-right: 5px;
 }
 
 .top-buttons {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    display: flex;
-    align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .top-buttons button {
-    margin-left: 10px;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    background-color: grey;
-    color: white;
-    border: 1px solid white;
-    border-radius: 5px;
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: grey;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
 }
 
 .top-buttons button:hover {
-    background-color: #ffffff33;
+  background-color: #ffffff33;
 }
 
+/* Add to your existing CSS file */
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.6); 
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  color: #333;
+  margin: 15% auto; /* Center vertically and horizontally */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px; /* Limit the maximum width */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Add some shadow for depth */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+[role="tab"][aria-selected="true"] {
+  border-bottom-color: #2563eb;
+  color: #2563eb;
+}
+
+
 .home h1 {
-    font-family: Anton;
-    font-size: 75px;
-    margin-top: 50px; 
-    text-shadow: 0px 0px 10px black;
+  font-family: Anton;
+  font-size: 75px;
+  margin-top: 50px; 
+  text-shadow: 0px 0px 10px black;
 }
 
 .home p {
-    font-size: 1.5rem;
-    line-height: 1.6;
-    font-family: Arvo;
-    text-shadow: 0px 0px 10px black;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-family: Arvo;
+  text-shadow: 0px 0px 10px black;
 }
 
 
-.about-us{
-    display: flex;
-    flex-direction: row;
-    background-color: #989797;
-    justify-content: space-around;
-   padding: 50px;
+#about-us{
+  display: flex;
+  flex-direction: row;
+  background-color: #989797;
+  justify-content: space-around;
+ padding: 50px;
 }
 
-.about-us h2{
-    font-family: Anton;
-    font-size: 5em;
-   
-    margin-right: 300px;
-    padding: 50px;
-    margin-left: 100px;
-    border-right: 5px solid black
+#about-us h2{
+  font-family: Anton;
+  font-size: 5em;
+ 
+  margin-right: 300px;
+  padding: 50px;
+  margin-left: 100px;
+  border-right: 5px solid black
 }
 
-.about-us p{
-  
-    font-family: Arvo;
-    font-style: oblique;
-    font-size: 1.3em;
-    padding: 50px;
-    margin-right: 100px;
-    
+#about-us p{
+
+  font-family: Arvo;
+  font-style: oblique;
+  font-size: 1.3em;
+  padding: 50px;
+  margin-right: 100px;
 }
 
 
 .our-goal{
-    display: flex;
-    flex-direction: row;
-    background-color: #363636;
-    justify-content: space-around;
-   padding: 50px;
+  display: flex;
+  flex-direction: row;
+  background-color: #363636;
+  justify-content: space-around;
+ padding: 50px;
 }
 
 .our-goal h2{
-    font-family: Anton;
-    font-size: 5em;
-    color: white;
-    margin-right: 300px;
-    padding: 50px;
-    margin-left: 100px;
-    border-left: 5px solid white
+  font-family: Anton;
+  font-size: 5em;
+  color: white;
+  margin-right: 300px;
+  padding: 50px;
+  margin-left: 100px;
+  border-left: 5px solid white
 }
 
 .our-goal p{
-    color: white;
-    font-family: Arvo;
-    font-style: oblique;
-    font-size: 1.3em;
-    padding: 50px;
-    margin-right: 100px;
-    text-align: right;
-    
-}
-
-.light{
-  background-color: white;
-  color: black;
-}
-
-.dark{
-  background-color: rgb(66, 62, 62);
   color: white;
+  font-family: Arvo;
+  font-style: oblique;
+  font-size: 1.3em;
+  padding: 50px;
+  margin-right: 100px;
+  text-align: right;
+  
+}
+
+.exercise-videos{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #363636;
+  padding: 100px;
+
+}
+
+.video{
+  padding: 40px;
+  width: fit-content;
+  background-color: #898989;
+}
+
+
+
+footer{
+  background-color: #bcbcbc;
+  padding: 50px;
+  display: flex;
+  border-top: 20px solid #898989;
+}    
+
+.logo2 {
+  color: white;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  font-family: Teko;
+  font-size: 50px;
+  text-shadow: 0px 0px 10px rgb(127, 123, 123);
+  
+}
+
+footer a{
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+  color: white;
+  font-family: Arvo;
+  text-shadow: 0px 0px 10px rgb(127, 123, 123);
+  display: flex;
+  justify-content: center;
 }
