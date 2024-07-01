@@ -171,7 +171,9 @@
   margin-right: 300px;
   padding: 50px;
   margin-left: 100px;
-  border-right: 5px solid black
+  border-right: 5px solid #bcbcbc;
+  text-shadow: 0px 0px 10px rgb(106, 104, 104);
+  
 }
 #bmi-section{
   height: 100vh;
@@ -184,6 +186,7 @@
   font-size: 2rem;
   padding: 50px;
   margin-right: 100px;
+  text-shadow: 0px 0px 10px rgb(106, 104, 104);
 }
 
 
@@ -214,6 +217,7 @@
   padding: 50px;
   margin-right: 100px;
   text-align: right;
+  text-shadow: 0px 0px 10px rgb(106, 104, 104);
   
 }
 

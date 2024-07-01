@@ -11,15 +11,15 @@
 </head>
 
 <body class="bg-gray-100 font-sans">
-  <header class="bg-blue-600 text-white p-4 flex justify-between items-center">
+  <header class="bg-stone-600 text-white p-4 flex justify-between items-center">
     <div class="flex items-center">
       <div class="logo">
-        <img src="" alt="logo" class="h-12 w-auto mr-4" />
+        <img src="./assets/images/logo.png" alt="logo" class="h-20 w-auto mr-4" />
       </div>
       <h1 class="text-3xl font-bold">Exercise Regiment</h1>
     </div>
     <button id="logout-btn"
-      class="bg-white text-blue-600 py-2 px-4 rounded-md hover:bg-blue-100 transition duration-300">Logout</button>
+      class="bg-white text-stone-600 py-2 px-4 rounded-md hover:bg-stone-100 transition duration-300">Logout</button>
   </header>
   <!-- BMI Calculate Modal -->
   <div id="bmi-modal" tabindex="-1" aria-hidden="true"
@@ -48,28 +48,28 @@
             <div>
               <label for="bmi-age" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Age</label>
               <input type="number" name="bmi-age" id="bmi-age"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-stone-500 focus:border-stone-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                 placeholder="Your age" required />
             </div>
             <div>
               <label for="bmi-weight" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Weight
                 (kg)</label>
               <input type="number" name="bmi-weight" id="bmi-weight"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-stone-500 focus:border-stone-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                 placeholder="Weight in kilograms" required />
             </div>
             <div>
               <label for="bmi-height" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Height
                 (cm)</label>
               <input type="number" name="bmi-height" id="bmi-height"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-stone-500 focus:border-stone-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                 placeholder="Height in centimeters" required />
             </div>
             <div>
               <label for="bmi-gender"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Gender</label>
               <select id="bmi-gender"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-stone-500 focus:border-stone-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                 required>
                 <option value="" disabled selected>Select gender</option>
                 <option value="male">Male</option>
@@ -78,12 +78,12 @@
               </select>
             </div>
             <button type="submit" id="calculate-bmi-btn"
-              class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Calculate
+              class="w-full text-white bg-stone-700 hover:bg-stone-800 focus:ring-4 focus:outline-none focus:ring-stone-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-stone-600 dark:hover:bg-stone-700 dark:focus:ring-stone-800">Calculate
               BMI</button>
           </form>
           <div id="bmi-result" class="mt-4 text-center hidden">
             <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Your BMI Result</h4>
-            <p id="bmi-value" class="text-2xl font-bold text-blue-600"></p>
+            <p id="bmi-value" class="text-2xl font-bold text-stone-600"></p>
             <p id="bmi-category" class="text-md text-gray-600 dark:text-gray-300"></p>
           </div>
         </div>
@@ -94,7 +94,7 @@
   <div class="container mx-auto mt-8">
     <ul class="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 mb-4">
       <li class="mr-2">
-        <a href="#profile-content" class="inline-block p-4 text-blue-600 bg-gray-100 rounded-t-lg active">Profile</a>
+        <a href="#profile-content" class="inline-block p-4 text-stone-600 bg-gray-100 rounded-t-lg active">Profile</a>
       </li>
       <li class="mr-2">
         <a href="#bmi-content" class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50">BMI
@@ -120,12 +120,12 @@
         <h2 class="text-2xl font-semibold mb-4">BMI Calculator</h2>
         <!-- Add your BMI calculator form here -->
         <button data-modal-target="bmi-modal" data-modal-toggle="bmi-modal"
-          class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          class="block text-white bg-stone-700 hover:bg-stone-800 focus:ring-4 focus:outline-none focus:ring-stone-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-stone-600 dark:hover:bg-stone-700 dark:focus:ring-stone-800"
           type="button">
           Calculate BMI
         </button>
         <div id="bmi-result-display" class="hidden mt-4">
-          <p class="text-lg font-semibold">Your BMI: <span id="bmi-value-display" class="text-blue-600"></span></p>
+          <p class="text-lg font-semibold">Your BMI: <span id="bmi-value-display" class="text-stone-600"></span></p>
           <p class="text-md">Category: <span id="bmi-category-display" class="font-medium"></span></p>
         </div>
       </div>
@@ -162,7 +162,7 @@
             </select>
 
             <button type="submit"
-              class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300">Search</button>
+              class="w-full bg-stone-600 text-white py-2 px-4 rounded-md hover:bg-stone-700 transition duration-300">Search</button>
           </form>
         </div>
         <div id="result-content" class="w-2/3 bg-white rounded-lg shadow-md p-6"></div>
