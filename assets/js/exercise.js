@@ -102,8 +102,6 @@ function removeModalBackdrop() {
     document.body.style.paddingRight = '';
 }
 function handleLogout() {
-    // Perform any necessary logout actions (e.g., clearing local storage)
-    // localStorage.clear();
 
     // Redirect to index.html
     window.location.href = "index.html";
@@ -174,6 +172,7 @@ function handleBMISubmit(event) {
 
     displayBMIData(bmiData);
     closeModal();
+    removeModalBackdrop();
 }
 
 function displayBMIData(bmiData) {
@@ -209,6 +208,18 @@ function checkLoggedUser() {
     return loggedUser;
 }
 
+function displayUserProfile() {
+    const loggedUserJSON = localStorage.getItem("loggedUser");
+    if (loggedUserJSON) {
+        loggedUser = JSON.parse(loggedUserJSON);
+        document.getElementById('profile-name').textContent = loggedUser.name || 'N/A';
+        document.getElementById('profile-username').textContent = loggedUser.username || 'N/A';
+        document.getElementById('profile-gender').textContent = loggedUser.gender || 'N/A';
+    } else {
+        console.log("No logged user found in local storage");
+        // Optionally, you can display a message or redirect to the login page
+    }
+}
 
 $(document).ready(function () {
     initializeTabs();
@@ -230,4 +241,5 @@ $(document).ready(function () {
         }
     });
     loadBMIData();
+    displayUserProfile();
 });

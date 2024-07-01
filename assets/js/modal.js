@@ -6,12 +6,6 @@ function removeModalBackdrop() {
     document.body.classList.remove('overflow-hidden');
 }
 
-function createBmiChart(){
-    const heights = ['6\'5"', '6\'4"', '6\'3"', '6\'2"', '6\'1"', '6\'0"', '5\'11"', '5\'10"', '5\'9"', '5\'8"', '5\'7"', '5\'6"', '5\'5"', '5\'4"', '5\'3"', '5\'2"', '5\'1"', '5\'0"', '4\'11"', '4\'10"'];
-    
-}
-
-
 document.addEventListener('DOMContentLoaded', function () {
     // Tab functionality
     const tabs = document.querySelectorAll('[role="tab"]');
@@ -115,18 +109,19 @@ document.addEventListener('DOMContentLoaded', function () {
         const username = document.getElementById('login-username').value;
         const password = document.getElementById('login-password').value;
         const user = JSON.parse(localStorage.getItem(username));
-    
+
+        console.log(username, password, user)
         if (user && user.password === password) {
             // Create a loggedUser object
             const loggedUser = {
                 username: username,
                 name: user.name,
-                // Add any other relevant user data here, but don't include sensitive info like password
+                gender: user.gender
             };
-    
+
             // Store loggedUser in localStorage
             localStorage.setItem("loggedUser", JSON.stringify(loggedUser));
-    
+
             alert(`Welcome, ${user.name}!`);
             removeModalBackdrop();
             window.location.href = 'exercise.html';
@@ -135,3 +130,4 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+

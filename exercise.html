@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
-  <link src="./assets/css/exercise.css" rel="stylesheet"/>
+  <link src="./assets/css/exercise.css" rel="stylesheet" />
   <title>Exercise Regiment</title>
 </head>
 
@@ -105,15 +105,31 @@
         <a href="#exercises-content"
           class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50">Exercises</a>
       </li>
-      <li class="mr-2">
+      <!-- <li class="mr-2">
         <a href="#nutrition-content"
           class="inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50">Nutrition</a>
-      </li>
+      </li> -->
     </ul>
 
     <div id="profile-content" class="tab-content">
       <h2 class="text-2xl font-semibold mb-4">Your Profile</h2>
       <!-- Add profile content here -->
+      <div class="flex items-start">
+        <div class="mr-8">
+          <div class="w-32 h-32 bg-gray-300 rounded-full flex items-center justify-center">
+            <svg class="w-16 h-16 text-gray-500" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd">
+              </path>
+            </svg>
+          </div>
+        </div>
+        <div>
+          <p class="text-lg"><strong>Name:</strong> <span id="profile-name"></span></p>
+          <p class="text-lg"><strong>Username:</strong> <span id="profile-username"></span></p>
+          <p class="text-lg"><strong>Gender:</strong> <span id="profile-gender"></span></p>
+        </div>
+      </div>
     </div>
 
     <div id="bmi-content" class="tab-content hidden">
@@ -182,6 +198,7 @@
     integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
   <script src="./assets/js/exercise.js"></script>
+  <script src="./assets/js/modal.js"></script>
 </body>
 
 </html>
