@@ -1,71 +1,46 @@
-const searchFormEl = $("#search-form");
-const resultTextEl = $("#result-text");
-const resultContentEl = $("#result-content");
-//API Key e6KIhBj0XyxJ+z6IyJL41g==X2pCWIBbVTDEJEEX
-const appId = "e6KIhBj0XyxJ+z6IyJL41g==X2pCWIBbVTDEJEEX";
- 
-// GET request to the exercise API
-function searchApi(muscle) {
-  // The URL for the API request to get the exercise
-  let excQueryUrl = `https://api.api-ninjas.com/v1/exercises?muscle=${muscle}`;
 
-  fetch(excQueryUrl, {
-    headers: {
-      'X-Api-Key': appId
-    }
-  })
-  .then(function (response) {
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
-    return response.json();
-  })
-  .then((data) => {
-    console.log("Exercise data: ", data);
-    displayResults(data);
-  })
-  .catch((error) => {
-    console.error("Error:", error);
-    resultContentEl.text("An error occurred while fetching data.");
-  });
-}
-
-function displayResults(resultObj) {
-  resultContentEl.empty();
-  if (resultObj.length === 0) {
-    resultContentEl.text("No results found.");
-    return;
-  }
-  
-  resultObj.forEach(exercise => {
-    const exerciseDiv = $("<div>").addClass("exercise-item");
-    exerciseDiv.append($("<h3>").text(exercise.name));
-    exerciseDiv.append($("<p>").text(`Type: ${exercise.type}`));
-    exerciseDiv.append($("<p>").text(`Muscle: ${exercise.muscle}`));
-    exerciseDiv.append($("<p>").text(`Equipment: ${exercise.equipment}`));
-    exerciseDiv.append($("<p>").text(`Difficulty: ${exercise.difficulty}`));
-    exerciseDiv.append($("<p>").text(`Instructions: ${exercise.instructions}`));
-    exerciseDiv.append($("<div>").addClass("horizontal-line"));
-
-    resultContentEl.append(exerciseDiv);
-    
-  });
-}
-
-function handleSearchSubmit(event) {
-  event.preventDefault();
-  console.log("Entering handleSearchSubmit function");
-
-  const searchInputVal = $("#muscle-name").val();
-
-  if (!searchInputVal) {
-    alert("Please select a muscle name.");
-    return;
-  }
-    console.log("Search: ", searchInputVal);
-    searchApi(searchInputVal);
-}
-
-$(document).ready(function() {
-  searchFormEl.on("submit", handleSearchSubmit);
+document.addEventListener('DOMContentLoaded', function () {
+  var elems = document.querySelectorAll('.dropdown-trigger');
+  // var instances = M.Dropdown.init(elems, options);
 });
+
+const videoSection = document.querySelector('.exercise-videos');
+
+fetch('https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=UUHcFIpm8rD9IrlDrw4Ted-Q&key=AIzaSyCyp3Ow3XgHeRTDbfPUreXa7I5lQ1Tv6fY')
+  .then(res => res.json())
+  .then(data => {
+    if (data.items.length > 0) {
+      const randomIndex = Math.floor(Math.random() * data.items.length);
+      const randomVideo = data.items[randomIndex];
+      const videoId = randomVideo.snippet.resourceId.videoId;
+
+      function onYouTubeIframeAPIReady() {
+        new YT.Player('player', {
+          videoId: videoId,
+          events: {
+            'onReady': onPlayerReady,
+          }
+        });
+      }
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      if (typeof YT === 'undefined' || typeof YT.Player === 'undefined') {
+        const tag = document.createElement('script');
+        tag.src = 'https://www.youtube.com/iframe_api';
+        const firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      } else {
+        onYouTubeIframeAPIReady();
+      }
+
+    } else {
+
+      console.log('No videos found in the playlist.');
+    }
+  })
+  .catch(err => {
+    console.error('Error fetching YouTube playlist:', err);
+  });
+
