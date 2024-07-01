@@ -141,7 +141,10 @@
                     <span>FitnessLab</span>
                 </div>
                 <div class="top-buttons">
-                    <button id="theme-switcher">Theme Switcher</button>
+                    <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                    </button>
                     <button class="dropdown" id="dropdownDefaultButton" data-dropdown-toggle="dropdown">
                         Menu
                     </button>
@@ -155,7 +158,7 @@
                 <h1>Welcome to Fitness Lab</h1>
                 <p>Transforming Lives, One Workout at a Time!</p>
             </div>
-            <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 light:bg-gray-500">
+            
                 
             <div id="dropdown"
                 class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 light:bg-gray-500">
@@ -180,7 +183,7 @@
             </div>
 
         </section>
-        <section id="about-us">
+        <section class="about-us dark:bg-gray-700 dark:text-white">
 
             <h2>About Us</h2>
             <p>Fitness Lab is specialized in helping you find exercises tailored to your unique body type.
@@ -193,7 +196,7 @@
                 success today!</p>
         </section>
 
-        <section class="flex justify-around bg-stone-300 pb-10">
+        <section class="flex justify-around bg-stone-300 pb-10 dark:bg-gray-800 dark:text-white">
 
             <div id="BMIChart"
                 class="  max-w-2xl bg-stone-300  mt-10  border border-gray-400 rounded-lg shadow light dark:border-gray-700">
@@ -303,7 +306,7 @@
             </div>
 
             <div
-                class="  max-w-2xl bg-stone-300  mt-10 border border-gray-400 rounded-lg shadow light dark:border-gray-700">
+                class="  max-w-2xl bg-stone-300  mt-10 border border-gray-400 rounded-lg shadow light dark:border-gray-700 ">
                 <a href="#">
                     <div class="rounded-t-lg">
                         <iframe width="100%" height="400" src="https://www.youtube.com/embed/xyQY8a-ng6g"
@@ -317,7 +320,7 @@
                     <a href="#">
                         <h5
                             class="mb-3 text-4xl font-black tracking-tight text-gray-900 dark:text-black text-center font-mono">
-                            NUTRICIONAL HELP</h5>
+                            NUTRITION HELP</h5>
                     </a>
                     <p class="mb-4 font-medium text-gray-700 dark:text-gray-800 text-center">
                         Having good nutrition is crucial for several reasons, all of which contribute to overall health,
@@ -337,7 +340,7 @@
             </div>
         </section>
 
-        <section id="our-goal" class="our-goal">
+        <section id="our-goal" class="our-goal dark:bg-gray-700 dark:text-white">
 
             <p>At FitnessLab, our goal is to empower individuals by providing personalized exercise recommendations
                 tailored to their unique body types.
@@ -350,7 +353,7 @@
                 achieving sustainable, personalized success</p>
             <h2>Our Goal</h2>
         </section>
-        <section class="exercise-videos">
+        <section class="exercise-videos dark:bg-gray-800 dark:text-white">
             <div class='video'>
                 <div id="player"></div>
             </div>
@@ -361,7 +364,7 @@
 
 
 
-    <footer>
+    <footer class="dark:bg-gray-700 dark:text-white">
         <div class="logo2">
             <span class="material-symbols-outlined">
                 fitness_center

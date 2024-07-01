@@ -1,9 +1,9 @@
-/* :root {
+ /* :root {
     
-}
+} */
 
   
-.teko-font {
+ .teko-font {
   font-family: "Teko", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
@@ -89,7 +89,7 @@
 
 .top-buttons button:hover {
   background-color: #ffffff33;
-}
+} */
 
 /* Add to your existing CSS file */
 
@@ -154,7 +154,7 @@
 }
 
 
-#about-us{
+.about-us{
   display: flex;
   flex-direction: row;
   background-color: #989797;
@@ -162,17 +162,16 @@
  padding: 50px;
 }
 
-#about-us h2{
+.about-us h2{
   font-family: Anton;
   font-size: 5em;
- 
   margin-right: 300px;
   padding: 50px;
   margin-left: 100px;
   border-right: 5px solid black
 }
 
-#about-us p{
+.about-us p{
 
   font-family: Arvo;
   font-style: oblique;
@@ -232,7 +231,7 @@ footer{
   background-color: #bcbcbc;
   padding: 50px;
   display: flex;
-  border-top: 20px solid #898989;
+  /* border-top: 20px solid #898989; */
 }    
 
 .logo2 {
