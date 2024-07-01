@@ -2,7 +2,9 @@
     
 }
 
-  
+
+
+
 .teko-font {
   font-family: "Teko", sans-serif;
   font-optical-sizing: auto;
@@ -157,8 +159,8 @@
 #about-us{
   display: flex;
   flex-direction: row;
-  background-color: #e66013;
-  color: #bcbcbc;
+  background-color: #f17731;
+  color: #ffffff;
   justify-content: center;
   align-items: center;
   padding: 50px;
@@ -171,12 +173,13 @@
   margin-right: 300px;
   padding: 50px;
   margin-left: 100px;
-  border-right: 5px solid #bcbcbc;
+  border-right: 5px solid white;
   text-shadow: 0px 0px 10px rgb(106, 104, 104);
   
 }
 #bmi-section{
   height: 100vh;
+  background-color: #f17731;l
 }
 
 #about-us p{
@@ -193,7 +196,7 @@
 .our-goal{
   display: flex;
   flex-direction: row;
-  background-color: #363636;
+  background-color: #f17731;
   justify-content: space-around;
  padding: 50px;
  
@@ -206,7 +209,8 @@
   margin-right: 300px;
   padding: 50px;
   margin-left: 100px;
-  border-left: 5px solid white
+  border-left: 5px solid white;
+  text-shadow: 0px 0px 10px rgb(106, 104, 104);
 }
 
 .our-goal p{
@@ -226,15 +230,19 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: #363636;
+  background-color: #f17731;
   padding: 100px;
 
 }
 
+
+
 .video{
   padding: 40px;
   width: fit-content;
-  background-color: #898989;
+  background-color: white;
+  box-shadow: 0px 0px 20px rgb(94, 94, 94);
+  border-radius: 5px;
 }
 
 

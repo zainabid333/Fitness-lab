@@ -61,14 +61,14 @@ function displayResults(resultObj) {
         return;
     }
 
-    const showMoreBtn = $("<button>").addClass("mt-4 px-4 py-2 bg-blue-500 text-white rounded").text("Show More");
+    const showMoreBtn = $("<button>").addClass("mt-4 px-4 py-2 bg-orange-500 text-white rounded").text("Show More");
     let displayedCount = 0;
 
     function displayMore() {
         const toDisplay = resultObj.slice(displayedCount, displayedCount + 5);
         toDisplay.forEach(exercise => {
             const exerciseDiv = $("<div>").addClass("mb-8 pb-8 border-b border-gray-200 last:border-b-0");
-            exerciseDiv.append($("<h3>").addClass("text-xl font-semibold mb-2 text-blue-600").text(exercise.name));
+            exerciseDiv.append($("<h3>").addClass("text-xl font-semibold mb-2 text-orange-600").text(exercise.name));
             exerciseDiv.append($("<p>").addClass("mb-1").html(`<span class="font-semibold">Type:</span> ${exercise.type}`));
             exerciseDiv.append($("<p>").addClass("mb-1").html(`<span class="font-semibold">Muscle:</span> ${exercise.muscle}`));
             exerciseDiv.append($("<p>").addClass("mb-1").html(`<span class="font-semibold">Equipment:</span> ${exercise.equipment}`));
@@ -112,8 +112,8 @@ function handleLogout() {
 function initializeTabs() {
     $('ul.flex > li > a').click(function (e) {
         e.preventDefault();
-        $('ul.flex > li > a').removeClass('text-blue-600 bg-gray-100 active');
-        $(this).addClass('text-blue-600 bg-gray-100 active');
+        $('ul.flex > li > a').removeClass('text-orange-600 bg-gray-100 active');
+        $(this).addClass('text-orange-600 bg-gray-100 active');
         $('.tab-content').addClass('hidden');
         $($(this).attr('href')).removeClass('hidden');
     });
