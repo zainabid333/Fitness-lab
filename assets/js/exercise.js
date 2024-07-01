@@ -68,7 +68,7 @@ function displayResults(resultObj) {
         const toDisplay = resultObj.slice(displayedCount, displayedCount + 5);
         toDisplay.forEach(exercise => {
             const exerciseDiv = $("<div>").addClass("mb-8 pb-8 border-b border-gray-200 last:border-b-0");
-            exerciseDiv.append($("<h3>").addClass("text-xl font-semibold mb-2 text-blue-600").text(exercise.name));
+            exerciseDiv.append($("<h3>").addClass("text-xl font-semibold mb-2 dark:text-white text-blue-600").text(exercise.name));
             exerciseDiv.append($("<p>").addClass("mb-1").html(`<span class="font-semibold">Type:</span> ${exercise.type}`));
             exerciseDiv.append($("<p>").addClass("mb-1").html(`<span class="font-semibold">Muscle:</span> ${exercise.muscle}`));
             exerciseDiv.append($("<p>").addClass("mb-1").html(`<span class="font-semibold">Equipment:</span> ${exercise.equipment}`));
